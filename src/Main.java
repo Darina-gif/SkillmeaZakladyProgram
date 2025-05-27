@@ -25,14 +25,14 @@ public class Main {
         System.out.println(pozdrav2 + " " + jmeno);*/
 
         //Uloha: Uzivatel napise sve jmeno a program ho pozdravi
-       /* String pozdrav3 = "Ahoj, ";
+        /*String pozdrav3 = "Ahoj, ";
         Scanner mujScanner = new Scanner(System.in);
         System.out.println("Zadej sve jmeno:");
         String jmeno = mujScanner.nextLine();
         System.out.println(pozdrav3 + jmeno);*/
 
-       //Kalkulacka
-       /* float prvniCislo;
+        //Kalkulacka
+        /*float prvniCislo;
         float druheCislo;
         Scanner mujScanner = new Scanner(System.in);
 
@@ -53,17 +53,17 @@ public class Main {
         double soucet = a + b;
         System.out.println(soucet);*/
 
-        //final int NEJAKE_CISLO = 5;
+        //int NEJAKE_CISLO = 5;
 
         //Uzivatel zada slovo, ve vypisu budou vsechna pismena velke
-       /* Scanner mujScanner = new Scanner(System.in);
+        /*Scanner mujScanner = new Scanner(System.in);
         System.out.println("Zadej sve slovo:");
         String slovo = mujScanner.nextLine();
 
         System.out.println(slovo);*/
 
         //Prevod typu
-        int prevedeneCislo = Integer.parseInt("5");
+        //int prevedeneCislo = Integer.parseInt("5");
 
         int prvniCislo = 8;
         int druheCislo = 3;
@@ -73,5 +73,8 @@ public class Main {
         System.out.println(prvniCislo + druheCislo);
         System.out.println(prvniCislo - druheCislo);
         System.out.println(prvniCislo % druheCislo);
+
+        System.out.println(prvniCislo <= druheCislo);
+
     }
 }
