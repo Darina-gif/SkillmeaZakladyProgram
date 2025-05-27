@@ -47,14 +47,31 @@ public class Main {
         System.out.println(prvniCislo * druheCislo);
         System.out.println(prvniCislo / druheCislo);*/
 
-        double a = 0.1;
+        /*double a = 0.1;
         double b = 0.2;
 
         double soucet = a + b;
-        System.out.println(soucet);
+        System.out.println(soucet);*/
 
+        //final int NEJAKE_CISLO = 5;
 
+        //Uzivatel zada slovo, ve vypisu budou vsechna pismena velke
+       /* Scanner mujScanner = new Scanner(System.in);
+        System.out.println("Zadej sve slovo:");
+        String slovo = mujScanner.nextLine();
 
+        System.out.println(slovo);*/
 
+        //Prevod typu
+        int prevedeneCislo = Integer.parseInt("5");
+
+        int prvniCislo = 8;
+        int druheCislo = 3;
+        //prvniCislo = prvniCislo + druheCislo;
+        //prvniCislo += druheCislo;
+
+        System.out.println(prvniCislo + druheCislo);
+        System.out.println(prvniCislo - druheCislo);
+        System.out.println(prvniCislo % druheCislo);
     }
 }
