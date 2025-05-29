@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
@@ -81,18 +82,17 @@ public class Main {
         System.out.println(!(false));*/
 
         //Feature pro kontolu veku, bude li mít uzivatel 18 a vice vypis do kozole vitej v aplikaci
-        int vek;
+        /*int vek;
         Scanner mujScanner = new Scanner(System.in);
         System.out.println("Zadej svuj vek:");
         vek = mujScanner.nextInt();
 
-        if (vek >= 18 && vek < 65) {
+        if (vek >= 18) {
             System.out.println("Uzivatel je dospely");
+            if (vek >= 65) {
+                System.out.println("Uzivatel je senior");
         }
-        else if (vek >= 65) {
-            System.out.println("Uzivatel je senior");
         }
-
         else if(vek >= 0 && vek < 18) {
             System.out.println("Uzivatel je nezletily");
         }
@@ -100,4 +100,57 @@ public class Main {
             System.out.println("Nelze zadat zaporny vek");
         }
     }
+    }*/
+    //Vypocet BMI hmotnost (kg)/vyska na druhou (m)
+        // (<18.5) - podváha
+        // (>=18.5 && <25) - optimální váha
+        // (>=25) - nadváha
+
+    /*float vyska;
+    float hmotnost;
+    float bmi;
+        Scanner mujScanner = new Scanner(System.in);
+        System.out.println("Zadej vysku (m)");
+        vyska = mujScanner.nextFloat();
+        System.out.println("Zadej vahu (kg):");
+        hmotnost = mujScanner.nextFloat();
+        bmi = hmotnost / (vyska * vyska);
+
+        if(bmi < 18.5f && bmi>=0) {
+            System.out.println("Uzivatel ma podvahu");
+        }
+        else if(bmi>=18.5f && bmi<25){
+            System.out.println("Uzivatel ma optimalni vahu");
+        }
+        else if(bmi>=25) {
+            System.out.println("Uzivatel ma nadvahu");
+        }
+        else {
+            System.out.println("Uzivatel zadal zapornou hmotnost");
+        }
+
+        System.out.println("Vase BMI je:" + bmi);*/
+
+
+    //Liche cislo = vyhrava, Sude cislo = prohrava
+      /*  int hozeneCislo;
+        Random nahodnyGenerator = new Random();
+
+        System.out.println("Pro hozeni kostkou stiskni enter");
+        Scanner mujScanner = new Scanner(System.in);
+        mujScanner.nextLine();
+
+        hozeneCislo = nahodnyGenerator.nextInt(1,7);
+        System.out.println("Hozene cislo je:" + hozeneCislo);
+        if (hozeneCislo % 2 == 1) {
+            System.out.println("Licha - Vyhravas!");
+        }
+        else {
+            System.out.println("Suda - Prohravas!");
+        }*/
+
+
+
+
     }
+}
