@@ -150,7 +150,7 @@ public class Main {
         }*/
 
         //Switch - den v tydnu
-        /*Scanner mujScanner = new Scanner(System.in);
+        /* Scanner mujScanner = new Scanner(System.in);
         int cisloDne;
         System.out.println("Zadej cislo dne");
         cisloDne = mujScanner.nextInt();  /*Uložim to cislo dne do konzoly*/
@@ -195,7 +195,7 @@ public class Main {
         }*/
 
         //Pole
-        int [] znamky = new int[5];
+        /*int [] znamky = new int[5];
         znamky[0] = 3;
         znamky[1] = 5;
         znamky[2] = 2;
@@ -204,8 +204,33 @@ public class Main {
 
        int [] znamky2 = new int[] {3, 5, 1, 3, 1};
         //tu je výpis pola
-        System.out.print(znamky[2]);
+        System.out.print(znamky[2]);*/
 
+    /*String[] jmena = new String[]  {"Petr", "Jan", "Katka", "Eva", "Jana"};
+    jmena[0] = "Linda";
+    System.out.println(jmena[0]);*/
+
+        /*String[] jmena = new String[30];
+        Scanner mujScanner = new Scanner(System.in);
+        System.out.println("Zadej pozici ke zmene(max 29)");
+        int poziceZmeny = mujScanner.nextInt();
+        mujScanner.nextLine();
+        System.out.println("Zadej jmeno:");
+        String jmeno = mujScanner.nextLine();
+
+        jmena[poziceZmeny] = jmeno;
+        System.out.println(jmena[poziceZmeny]);*/
+
+
+
+       /* int[][] pole2D = new int[3][3];
+        pole2D[0][0] = 464;
+        pole2D[0][1] = -92;*/
+
+    //Smycky
+        for(int i = 5; i <= 100;i++){
+            System.out.println(i *10 + " Hello world");
+        }
 
 
     }
