@@ -149,6 +149,62 @@ public class Main {
             System.out.println("Suda - Prohravas!");
         }*/
 
+        //Switch - den v tydnu
+        /*Scanner mujScanner = new Scanner(System.in);
+        int cisloDne;
+        System.out.println("Zadej cislo dne");
+        cisloDne = mujScanner.nextInt();  /*Uložim to cislo dne do konzoly*/
+
+       /* switch (cisloDne) {
+            case 1:
+                System.out.println("Je pondeli");
+                break;
+            case 2:
+                System.out.println("Je uteri");
+                break;
+            case 3:
+                System.out.println("Je streda");
+                break;
+            case 4:
+                System.out.println("Je ctvrtek");
+                break;
+            case 5:
+                System.out.println("Je patek");
+                break;
+            case 6:
+                System.out.println("Je sobota");
+                break;
+            case 7:
+                System.out.println("Je nedele");
+                break;
+            default:
+                System.out.println("Neplatne cislo dne");
+        }
+        switch (cisloDne) {
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+                System.out.println("Je pracovni den");
+                break;
+            case 6:
+            case 7:
+                System.out.println("Je vikend");
+                break;
+        }*/
+
+        //Pole
+        int [] znamky = new int[5];
+        znamky[0] = 3;
+        znamky[1] = 5;
+        znamky[2] = 2;
+        znamky[3] = 3;
+        znamky[4] = 1;
+
+       int [] znamky2 = new int[] {3, 5, 1, 3, 1};
+        //tu je výpis pola
+        System.out.print(znamky[2]);
 
 
 
