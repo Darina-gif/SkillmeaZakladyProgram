@@ -61,7 +61,6 @@ public class Main {
         String slovo = mujScanner.nextLine();
 
         System.out.println(slovo);*/
-
         //Prevod typu
         //int prevedeneCislo = Integer.parseInt("5");
 
@@ -70,11 +69,26 @@ public class Main {
         //prvniCislo = prvniCislo + druheCislo;
         //prvniCislo += druheCislo;
 
-        System.out.println(prvniCislo + druheCislo);
+        /*System.out.println(prvniCislo + druheCislo);
         System.out.println(prvniCislo - druheCislo);
         System.out.println(prvniCislo % druheCislo);
+        System.out.println(prvniCislo <= druheCislo);*/
 
-        System.out.println(prvniCislo <= druheCislo);
+        /*int cisloPorovnani = 5;
+        System.out.println(cisloPorovnani > 0  && cisloPorovnani <= 8);
+        System.out.println(cisloPorovnani > 8 || cisloPorovnani < 0);
+        System.out.println(!(cisloPorovnani > 8 || cisloPorovnani < 0));
+        System.out.println(!(false));*/
+
+        //Feature pro kontolu veku, bude li mít uzivatel 18 a vice vypis do kozole vitej v aplikaci
+        int vek;
+        Scanner mujScanner = new Scanner(System.in);
+        System.out.println("Zadej svuj vek:");
+        vek = mujScanner.nextInt();
+
+        if (vek >= 18) {
+            System.out.println("Uzivatel je dospely");
+        }
 
     }
-}
+    }
