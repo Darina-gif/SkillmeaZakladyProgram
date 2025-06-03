@@ -236,7 +236,7 @@ public class Main {
             System.out.println(i);
         }*/
 
-        String[] jmena = new String[]  {"Petr", "Jan", "Katka", "Jana"};
+       /* String[] jmena = new String[]  {"Petr", "Jan", "Katka", "Jana"};
 
         //for - je lepší pre opakovanie
         for (int i = 0; i < jmena.length; i++) {
@@ -246,10 +246,100 @@ public class Main {
         //foreach - je lepší pri prechádzaní polí
         for (String jmeno: jmena) {
             System.out.println(jmeno);
+        }*/
+
+       /* //while
+        int ridiciPromenna = 0;
+        while (ridiciPromenna < 5) {
+            System.out.println(ridiciPromenna);
+            ridiciPromenna++;
+        }
+            System.out.println("Tady pokracuju");*/
+        //do ... while  - provede sa minimálne jednou
+      /*  int ridiciPromenna2 = 0;
+        do {
+            System.out.println(ridiciPromenna2++);
+            ridiciPromenna2++;
+        } while (ridiciPromenna2 < 5);*/
+
+        //Vylepseni ulohy hod kockami
+       /* int hozeneCislo;
+        Random nahodnyGenerator = new Random();
+        Scanner mujScanner = new Scanner(System.in);
+        boolean ridiciPromenna = true;
+        String ukonceni;
+        do {
+
+            System.out.println("Pro hozeni kostkou stiskni enter");
+            mujScanner.nextLine();
+
+            hozeneCislo = nahodnyGenerator.nextInt(1, 7);
+            System.out.println("Hozene cislo je: " + hozeneCislo);
+
+            if (hozeneCislo % 2 == 1) {
+                System.out.println("Licha - Vyhravas!");
+            } else {
+                System.out.println("Suda - Prohravas");
+            }
+
+            System.out.println("Pro ukoceni hry zadej pismeno q");
+            ukonceni = mujScanner.nextLine();
+            if(ukonceni.equals("q")){
+                ridiciPromenna = false;
+
+            }
+
+        } while (ridiciPromenna);*/
+
+        //21 (Blackjack)
+        Scanner mujScanner = new Scanner(System.in);
+        Random nahGen = new Random();
+        int skoreHrace = 0;
+        int skoreKrupiera = 0;
+        int tazenaKarta;
+        String uzivatelskyVstup;
+
+        do {
+            tazenaKarta = nahGen.nextInt(1, 14);
+            System.out.println("Tazena karta je: " + tazenaKarta);
+            skoreHrace = skoreHrace + tazenaKarta;
+            System.out.println("Skore hrace je: " + skoreHrace);
+
+            if(skoreHrace > 21){
+                System.out.println("Prohral jsi!");
+                break;
+            }
+
+            System.out.println("Chces dalsi kartu stiskni - d");
+            System.out.println("Uz nechces kartu stiskni - q");
+            uzivatelskyVstup = mujScanner.nextLine();
+
+            if(uzivatelskyVstup.equals("d")){
+                continue;
+            }
+            else if(uzivatelskyVstup.equals("q")){
+                while (skoreKrupiera < skoreHrace){
+                    skoreKrupiera += nahGen.nextInt(1, 14);
+                }
+                break;
+            }
+
+
+        }while(true);
+
+        System.out.println("Skore hrace: " + skoreHrace);
+        System.out.println("Skore krupiera: " + skoreKrupiera);
+
+        if((skoreHrace > skoreKrupiera && skoreHrace <= 21) || skoreKrupiera > 21){
+            System.out.println("Vyhral jste");
+        }else if(skoreKrupiera == skoreHrace){
+            System.out.println("Je to remiza");
+        }
+        else {
+            System.out.println("Prohral jste");
         }
 
-        //while
-
+        System.out.println("Dekujeme za hru");
 
     }
 }
