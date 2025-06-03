@@ -228,9 +228,27 @@ public class Main {
         pole2D[0][1] = -92;*/
 
     //Smycky
-        for(int i = 5; i <= 100;i++){
-            System.out.println(i *10 + " Hello world");
+      /*  for(int i = 0; i < 10; i++){
+          // System.out.println(i * 5);
+            if(i == 5){
+                continue;
+            }
+            System.out.println(i);
+        }*/
+
+        String[] jmena = new String[]  {"Petr", "Jan", "Katka", "Jana"};
+
+        //for - je lepší pre opakovanie
+        for (int i = 0; i < jmena.length; i++) {
+        System.out.println(jmena[i]);
         }
+
+        //foreach - je lepší pri prechádzaní polí
+        for (String jmeno: jmena) {
+            System.out.println(jmeno);
+        }
+
+        //while
 
 
     }
